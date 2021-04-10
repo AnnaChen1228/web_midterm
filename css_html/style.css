@@ -1,0 +1,19 @@
+p,ul{
+    border: 2px solid purple;
+    padding: .5em;/*0可省略 em為單位倍數*/
+}
+.block,li{
+    border: 2px solid blue;
+    padding: .5em;
+}
+ul{
+    display: flex; /*把order list內的項目都裝進項目內(橫排)*/
+    list-style: none; /*原排序的標誌消失*/
+}
+li{
+    margin:0px 10px;/*上下距離 左右距離(可寫成三個或四個) 四個:上 右 下 左 三個:上 右=左 下*/
+}
+.block{/*class內特定顯示*/
+    display: block;
+    /*border-bottom: 5px groove red;下方邊框*/
+}

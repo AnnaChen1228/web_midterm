@@ -1,0 +1,27 @@
+div{
+    width: 350px;
+    height: 200px;
+    margin: 100px 0px 0px 100px;
+    background-color: blue;
+}
+
+img{
+    width: 100px;
+    height: 100px;
+    margin: -40px 0px 0px 115px;/*-貼上去 覆蓋*/
+}
+
+img{
+    -webkit-animation: 'rotate1' 3s linear infinite;/*因為尚未完善故前面要加上-webkit-*/
+    animation: 'rotate1' 3s linear infinite;/*三秒繞一圈 linear 線性 infinite 無限次*/
+}
+
+@-webkit-keyframes rotate1{
+    form{transform: rotate(0 deg);}
+    to{transform: rotate(360deg);}
+}
+
+@keyframes rotate1{
+    form{transform: rotate(0 deg);}
+    to{transform: rotate(360deg);}
+}
