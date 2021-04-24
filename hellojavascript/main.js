@@ -9,9 +9,9 @@ $(function(){//$(document).ready(function)完整寫法 只使用一次的functio
         //$("h1").text($("li").eq(1).text()); //類似array
         var numberOfListItem=$("li").length;
         var randomChildNumber=Math.floor(Math.random()*numberOfListItem);
-        //var image=['hellojavascript\76a7aa003a9e3c0cf699e307682d6f94.jpg','hellojavascript\1190121143473497_b.jpg','hellojavascript\images.jpg']
+        var image=['hellojavascript\76a7aa003a9e3c0cf699e307682d6f94.JPG','hellojavascript\1190121143473497_b.JPG','hellojavascript\images.JPG']
         $("h1").text($("li").eq(randomChildNumber).text());
         //$('<img src="' + image[Math.floor(randomChildNumber)] + '">').appendTo("id"); 
-        //$("id").append($(image[randomChildNumber]));
+        $("id").append($(image[randomChildNumber]));
     });
 });
